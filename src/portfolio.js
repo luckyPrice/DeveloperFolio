@@ -244,6 +244,18 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
+      image: require("./assets/images/til.png"),
+      // projectName: "Saayahealth",
+      projectDesc: "LLM 기반 작성한 TIL을 Markdown(md) 형식으로 변환하여 연동된 플랫폼(GitHub, Notion)에 자동 업로드할 수 있는 기능을 제공. aws 아키텍처를 만들고 CI/CD 구축 ",
+      footerLink: [
+        {
+          name: "github",
+          url: "https://github.com/luckyPrice/Til_project/tree/main"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
       image: require("./assets/images/netflix.png"),
       // projectName: "Saayahealth",
       projectDesc: "Typescript로 Netflix 클론 애플리케이션제작. Docker 컨테이너로 배포하고 이를 Kubernetes 클러스터에 배포하기 위해 Jenkins를 활용한 안전한 CI/CD 파이프라인을 구축. SonarQube, Trivy, Prometheus, Grafana, ArgoCD, Helm 사용",
@@ -413,6 +425,30 @@ const blogSection = {
     "저의 블로그를 방문해주세요....!",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
+    {
+      url: "https://velog.io/@luckyprice1103/series/AWS-3-Tier-Architecture-%EA%B5%AC%EC%B6%95",
+      title: "3 Tier Architecture 구축",
+      description:
+        "AWS 3 Tier Architecture 구축"
+    },
+    {
+      url: "https://velog.io/@luckyprice1103/series/GitOps-%EA%B8%B0%EB%B0%98-%EB%B0%B0%ED%8F%AC-%EC%9E%90%EB%8F%99%ED%99%94-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8",
+      title: "쿠베네티스 프로젝트- GitOps 기반 배포 자동화",
+      description:
+        "쿠베네티스 프로젝트-(2) GitOps 기반 배포 자동화"
+    },
+    {
+      url: "https://velog.io/@luckyprice1103/%EB%A9%80%ED%8B%B0%EB%85%B8%EB%93%9C-Kubernetes-%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0-%EA%B5%AC%EC%B6%95",
+      title: "멀티노드 Kubernetes 클러스터 구축.",
+      description:
+        "멀티노드 Kubernetes 클러스터 구축."
+    },
+    {
+      url: "https://velog.io/@luckyprice1103/%EB%A9%80%ED%8B%B0-%EB%85%B8%EB%93%9C-%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EC%97%90%EC%84%9C-Prometheus-Grafana-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81-%EA%B5%AC%EC%B6%95",
+      title: "멀티 노드 클러스터에서 Prometheus + Grafana 모니터링 구축",
+      description:
+        "멀티 노드 클러스터에서 Prometheus + Grafana 모니터링 구축"
+    },
     {
       url: "https://velog.io/@luckyprice1103/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4AWS%EC%97%90%EC%84%9C%EC%9D%98-%EB%B3%B4%EC%95%88-%EB%B0%8F-%EC%95%94%ED%98%B8%ED%99%941",
       title: "AWS에서 암호 및 보안 서비스",
