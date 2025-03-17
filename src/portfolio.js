@@ -65,42 +65,6 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "java",
-      fontAwesomeClassname: "fab fa-java"
-    },
-    {
-      skillName: "node",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
       skillName: "aws",
       fontAwesomeClassname: "fab fa-aws"
     },
@@ -109,41 +73,93 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-jenkins"
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "ArgoCD",
+      fontAwesomeClassname: "fas fa-cubes"
+    },
+    {
+      skillName: "Kubernetes",
+      fontAwesomeClassname: "fas fa-cubes"
     },
     {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
     },
     {
-      skillName: "kotlin",
-      fontAwesomeClassname: "fab fa-android"
+      skillName: "Terraform",
+      fontAwesomeClassname: "fas fa-server"
     },
     {
-      skillName: "golang",
-      fontAwesomeClassname: "fas fa-keyboard"
+      skillName: "CloudFormation",
+      fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "ECS",
+      fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "gitlab",
+      fontAwesomeClassname: "fab fa-gitlab"
+    },
+    {
+      skillName: "CodePipeline",
+      fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "CodeDeploy",
+      fontAwesomeClassname: "fab fa-aws"
     },
     {
       skillName: "grafana",
-      fontAwesomeClassname: "fas fa-keyboard"
+      fontAwesomeClassname: "fas fa-desktop"
+    },
+    {
+      skillName: "Prometheus",
+      fontAwesomeClassname: "fas fa-desktop"
+    },
+    {
+      skillName: "MySQL",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "Oracle",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "RDS",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "Java",
+      fontAwesomeClassname: "fab fa-java"
+    },
+    {
+      skillName: "python",
+      fontAwesomeClassname: "fab fa-python"
     },
     {
       skillName: "C++",
       fontAwesomeClassname: "fas fa-keyboard"
     },
     {
-      skillName: "Prometheus",
+      skillName: "golang",
       fontAwesomeClassname: "fas fa-keyboard"
     },
     {
-      skillName: "ArgoCD",
-      fontAwesomeClassname: "fas fa-keyboard"
+      skillName: "JavaScript",
+      fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "Kubernetes",
-      fontAwesomeClassname: "fas fa-keyboard"
+      skillName: "Spring",
+      fontAwesomeClassname: "fas fa-leaf"
     },
+    {
+      skillName: "reactjs",
+      fontAwesomeClassname: "fab fa-react"
+    },
+    {
+      skillName: "nodejs",
+      fontAwesomeClassname: "fab fa-node"
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -246,7 +262,7 @@ const bigProjects = {
     {
       image: require("./assets/images/til.png"),
       // projectName: "Saayahealth",
-      projectDesc: "LLM 기반 작성한 TIL을 Markdown(md) 형식으로 변환하여 연동된 플랫폼(GitHub, Notion)에 자동 업로드할 수 있는 기능을 제공. aws 아키텍처를 만들고 CI/CD 구축 ",
+      projectDesc: "TILING - LLM 기반 작성한 TIL을 Markdown(md) 형식으로 변환하여 연동된 플랫폼(GitHub, Notion)에 자동 업로드할 수 있는 기능을 제공",
       footerLink: [
         {
           name: "github",
@@ -258,7 +274,7 @@ const bigProjects = {
     {
       image: require("./assets/images/netflix.png"),
       // projectName: "Saayahealth",
-      projectDesc: "Typescript로 Netflix 클론 애플리케이션제작. Docker 컨테이너로 배포하고 이를 Kubernetes 클러스터에 배포하기 위해 Jenkins를 활용한 안전한 CI/CD 파이프라인을 구축. SonarQube, Trivy, Prometheus, Grafana, ArgoCD, Helm 사용",
+      projectDesc: "MINIFLIX - Typescript로 Netflix 클론 애플리케이션제작. SonarQube, Trivy, Prometheus, Grafana, ArgoCD, Helm 사용",
       footerLink: [
         {
           name: "blog",
@@ -272,19 +288,15 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/capston.png"),
+      image: require("./assets/images/mugu.png"),
       // projectName: "Nextu",
-      projectDesc: "자바 스프링 부트와 react를 사용하여 만든 풀 스택 프로젝트. mysql을 aws의 rds로 마이그레이션후 aws ec2에서 배포. elastic load balncer와 asg를 사용하여 가용성 향상. cloud formation을 사용하여 로딩 시간 감소",
+      projectDesc: "MUGU - 집에 필요 없는 물건을 쉽게 팔거나, 단기적인 알바를 구하기 위한 사이트",
       footerLink: [
        
         {
-          name: "Backend",
-          url: "https://github.com/luckyPrice/online-e-commerce-marketplace-project-backend"
+          name: "github",
+          url: "https://github.com/luckyPrice/MUGU"
         },
-        {
-          name: "Frontend",
-          url: "https://github.com/luckyPrice/online-e-commerce-marketplace-project-front-end"
-        }
       ]
     },
     {
