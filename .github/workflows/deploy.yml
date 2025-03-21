@@ -23,6 +23,13 @@ jobs:
       - name: Install dependencies
         run: npm install  # 필요하다면 npm을 사용하지 않는 경우 수정
 
+      - name: Check formatting
+        run: npm run check-format
+
+      - name: Format code if needed
+        if: failure()  # check-format이 실패한 경우에만 실행
+        run: npm run format
+
       - name: Build the project
         run: npm run build  # 빌드 명령어 수정 가능
 
