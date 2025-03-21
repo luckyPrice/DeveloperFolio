@@ -299,45 +299,45 @@ const bigProjects = {
         },
       ]
     },
-    {
-      image: require("./assets/images/twitter.png"),
-      // projectName: "Nextu",
-      projectDesc: "react, firebase를 사용하여 실제 sns project처럼 친구 추가, 팔로우등 커뮤니케이션 할 수 있는 기능을 가지고 있는 애플리케이션 구현",
-      footerLink: [
+    // {
+    //   image: require("./assets/images/twitter.png"),
+    //   // projectName: "Nextu",
+    //   projectDesc: "react, firebase를 사용하여 실제 sns project처럼 친구 추가, 팔로우등 커뮤니케이션 할 수 있는 기능을 가지고 있는 애플리케이션 구현",
+    //   footerLink: [
        
-        {
-          name: "github",
-          url: "https://github.com/luckyPrice/twitter"
-        }
-      ]
-    },
+    //     {
+    //       name: "github",
+    //       url: "https://github.com/luckyPrice/twitter"
+    //     }
+    //   ]
+    // },
     { 
       image: require("./assets/images/ems.png"),
       // projectName: "Nextu",
-      projectDesc: "React & Node로 직원 관리 풀스택 구현. s3에서 정적파일을 저장하고 cloudfront를 통해 로드. 요청이 있을때 lambda함수를 호출해서 postgres rds에서 데이터를 저장, 처리, 반환 함. ",
+      projectDesc: "Peoplehub - 직원 혹은 모임에 속해있는 사람들을 관리 할 수 있는 인적자원 관리 시스템. ",
       footerLink: [
        
         {
           name: "github",
-          url: "https://github.com/luckyPrice/employee_management_system"
+          url: "https://github.com/luckyPrice/Peoplehub"
         }
       ]
     },
-    {
-      image: require("./assets/images/cicd.png"),
-      // projectName: "Nextu",
-      projectDesc: "Jenkins, Kubernets, Ansible을 이용한 CI/CD 프로젝트",
-      footerLink: [
-       {
-          name: "blog",
-          url: "https://github.com/luckyPrice/CICD-registration-app"
-        },
-        {
-          name: "github",
-          url: "https://github.com/luckyPrice/CICD-registration-app"
-        },
-      ]
-    },
+    // {
+    //   image: require("./assets/images/cicd.png"),
+    //   // projectName: "Nextu",
+    //   projectDesc: "Jenkins, Kubernets, Ansible을 이용한 CI/CD 프로젝트",
+    //   footerLink: [
+    //    {
+    //       name: "blog",
+    //       url: "https://github.com/luckyPrice/CICD-registration-app"
+    //     },
+    //     {
+    //       name: "github",
+    //       url: "https://github.com/luckyPrice/CICD-registration-app"
+    //     },
+    //   ]
+    // },
     // {
     //   image: require("./assets/images/twitter.png"),
     //   // projectName: "Nextu",
