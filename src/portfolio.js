@@ -299,18 +299,6 @@ const bigProjects = {
         },
       ]
     },
-    // {
-    //   image: require("./assets/images/twitter.png"),
-    //   // projectName: "Nextu",
-    //   projectDesc: "react, firebase를 사용하여 실제 sns project처럼 친구 추가, 팔로우등 커뮤니케이션 할 수 있는 기능을 가지고 있는 애플리케이션 구현",
-    //   footerLink: [
-       
-    //     {
-    //       name: "github",
-    //       url: "https://github.com/luckyPrice/twitter"
-    //     }
-    //   ]
-    // },
     { 
       image: require("./assets/images/ems.png"),
       // projectName: "Nextu",
@@ -323,6 +311,18 @@ const bigProjects = {
         }
       ]
     },
+    // {
+    //   image: require("./assets/images/twitter.png"),
+    //   // projectName: "Nextu",
+    //   projectDesc: "react, firebase를 사용하여 실제 sns project처럼 친구 추가, 팔로우등 커뮤니케이션 할 수 있는 기능을 가지고 있는 애플리케이션 구현",
+    //   footerLink: [
+       
+    //     {
+    //       name: "github",
+    //       url: "https://github.com/luckyPrice/twitter"
+    //     }
+    //   ]
+    // },
     // {
     //   image: require("./assets/images/cicd.png"),
     //   // projectName: "Nextu",
