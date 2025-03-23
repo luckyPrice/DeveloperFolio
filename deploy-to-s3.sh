@@ -14,5 +14,5 @@ aws s3 cp $BUILD_DIR s3://$S3_BUCKET/ --recursive
 
 echo "Deployment to S3 completed!"
 
+# cloudfront cache invalidation for check
 aws cloudfront create-invalidation --distribution-id E14RBO18FQSVTT --paths "/*"
-# E14RBO18FQSVTT
