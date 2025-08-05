@@ -24,10 +24,11 @@ const greeting = {
   title: "제 이름은 안상운 입니다.",
   subTitle: emoji(
     // "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
-    "누구보다 열심히 배우고자 하는 마음을 가진 엔지니어입니다. 🚀시스템 및 클라우드 아키텍처에 대한 깊은 이해를 바탕으로 다양한 환경에서 인프라를 구축하고 운영한 경험이 있습니다. AWS 클라우드에서의 풍부한 경험을 보유하고 있으며, 효율적인 시스템 설계와 자동화를 통해 안정적인 서비스를 제공하는 클라우드 및 시스템 엔지니어로 성장하고자 합니다!"
+    "문제 해결을 통해 시스템의 안정성과 효율성을 높이는 인프라 엔지니어입니다. 🚀 클라우드 네이티브 기술을 기반으로 CI/CD 파이프라인을 자동화하고, 장애를 선제적으로 방지하는 탄력적인 아키텍처를 설계하고 운영한 경험이 있습니다. 이 경험을 바탕으로 가장 신뢰도 높은 인프라를 구축하는 전문가로 성장하고 싶습니다."
+    
   ),
   resumeLink:
-    "resume.pdf", // Set to empty to hide the button
+    "resume.pdf", // Set to empty to hide the butto
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -47,17 +48,15 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "기술 스택",
-  subTitle: "시스템 엔지니어, 클라우드 엔지니어어, 데브옵스 엔지니어가 되고 싶습니다.",
-  skills: [
-    emoji("⚡ 클라우드 기반 시스템 구축 및 운영 (AWS, Azure)"),
-    emoji("⚡ 자동화 및 DevOps (CI/CD, IaC, Kubernetes, Terraform, Ansible)"),
-    emoji("⚡ 네트워크 및 보안 구성 (VPC, VPN, 방화벽, IAM)"),
-    emoji("⚡ 시스템 모니터링 및 로깅 (CloudWatch, Prometheus, grafana)"),
-    emoji("⚡ 스토리지 및 데이터 관리 (S3, EFS, FSx, RDS, DynamoDB)"),
-    emoji("⚡ 리눅스 서버 운영 및 최적화"),
-    emoji("⚡ 컨테이너, 오케스트레이션 (Docker, Kubernetes, EKS)"),
-    emoji("⚡ 애플리케이션 현대화 및 마이크로서비스 전환을 통한 클라우드 최적화")
+  subTitle: "안정성과 효율성을 모두 고려하는 클라우드 & 데브옵스 엔지니어를 목표로 합니다.",
 
+  skills: [
+    emoji("⚡ 클라우드 기반의 안정적이고 확장 가능한 아키텍처 설계 및 구축 (AWS, GCP)"),
+    emoji("⚡ Jenkins, ArgoCD 등을 활용한 CI/CD 파이프라인 자동화 및 GitOps 구현"),
+    emoji("⚡ Docker, Kubernetes(EKS) 기반의 컨테이너 환경 운영 및 오케스트레이션"),
+    emoji("⚡ Terraform, Ansible을 활용한 코드 기반 인프라 관리(IaC) 및 자동화"),
+    emoji("⚡ Prometheus, Grafana 기반의 시스템 성능 모니터링 및 장애 분석"),
+    emoji("⚡ VPC, Subnet, 보안 그룹, WAF를 활용한 다층적 네트워크 보안 설계")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -69,53 +68,61 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "jenkins",
-      fontAwesomeClassname: "fab fa-jenkins"
-    },
-    {
-      skillName: "ArgoCD",
-      fontAwesomeClassname: "fas fa-cubes"
-    },
-    {
-      skillName: "Kubernetes",
-      fontAwesomeClassname: "fas fa-cubes"
+      skillName: "gcp",
+      fontAwesomeClassname: "fas fa-cloud" // 범용 클라우드 아이콘
     },
     {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
     },
     {
-      skillName: "Terraform",
-      fontAwesomeClassname: "fas fa-server"
-    },
-    {
-      skillName: "CloudFormation",
-      fontAwesomeClassname: "fab fa-aws"
+      skillName: "Kubernetes",
+      fontAwesomeClassname: "fas fa-dharmachakra" // 쿠버네티스 로고와 유사한 아이콘
     },
     {
       skillName: "ECS",
       fontAwesomeClassname: "fab fa-aws"
     },
+    // CI/CD & IaC
+    {
+      skillName: "jenkins",
+      fontAwesomeClassname: "fab fa-jenkins"
+    },
+    {
+      skillName: "ArgoCD",
+      fontAwesomeClassname: "fas fa-sync-alt" // GitOps의 '동기화' 컨셉을 나타내는 아이콘
+    },
+    {
+      skillName: "Terraform",
+      fontAwesomeClassname: "fas fa-server"
+    },
     {
       skillName: "gitlab",
       fontAwesomeClassname: "fab fa-gitlab"
     },
-    {
-      skillName: "CodePipeline",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "CodeDeploy",
-      fontAwesomeClassname: "fab fa-aws"
-    },
+    // Monitoring
     {
       skillName: "grafana",
-      fontAwesomeClassname: "fas fa-desktop"
+      fontAwesomeClassname: "fas fa-chart-line" // 모니터링 툴에 더 적합한 아이콘
     },
     {
       skillName: "Prometheus",
-      fontAwesomeClassname: "fas fa-desktop"
+      fontAwesomeClassname: "fas fa-fire" // 프로메테우스의 '불' 로고를 상징하는 아이콘
     },
+    // Languages
+    {
+      skillName: "python",
+      fontAwesomeClassname: "fab fa-python"
+    },
+    {
+      skillName: "Java",
+      fontAwesomeClassname: "fab fa-java"
+    },
+    {
+      skillName: "C++",
+      fontAwesomeClassname: "fas fa-code" // 키보드보다 '코드'에 더 적합한 아이콘
+    },
+    // Database
     {
       skillName: "MySQL",
       fontAwesomeClassname: "fas fa-database"
@@ -123,18 +130,6 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Oracle",
       fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "Java",
-      fontAwesomeClassname: "fab fa-java"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "C++",
-      fontAwesomeClassname: "fas fa-keyboard"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -174,15 +169,11 @@ const techStack = {
   experience: [
     {
       Stack: "Cloud/Infra",
-      progressPercentage: "90%"
-    },
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "30%" //Insert relative proficiency in percentage
+      progressPercentage: "100%"
     },
     {
       Stack: "Backend",
-      progressPercentage: "60%"
+      progressPercentage: "40%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -232,13 +223,25 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Projects",
+  title: "주요 프로젝트",
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
+      image: require("./assets/images/onthetop.png"),
+      // projectName: "Saayahealth",
+      projectDesc: "On The Top(OTT) - 본 서비스는 사용자의 데스크 환경을 분석하고, 어울리는 제품을 추천 및 구매할 수 있는 AI 기반 데스크테리어 플랫폼입니다. 사용자의 참여와 상호작용을 통해 개인화된 경험을 제공합니다.",
+      footerLink: [
+        {
+          name: "github",
+          url: "https://github.com/100-hours-a-week/16-Hot6-wiki/wiki"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
       image: require("./assets/images/til.png"),
       // projectName: "Saayahealth",
-      projectDesc: "TILING - LLM 기반 작성한 TIL을 Markdown(md) 형식으로 변환하여 연동된 플랫폼(GitHub, Notion)에 자동 업로드할 수 있는 기능을 제공",
+      projectDesc: "TILING - LLM 기반 작성한 TIL을 Markdown(md) 형식으로 변환하여 연동된 플랫폼(GitHub, Notion)에 자동 업로드할 수 있는 기능을 제공합니다.",
       footerLink: [
         {
           name: "github",
@@ -248,25 +251,9 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/netflix.png"),
-      // projectName: "Saayahealth",
-      projectDesc: "MINIFLIX - Typescript로 Netflix 클론 애플리케이션제작. SonarQube, Trivy, Prometheus, Grafana, ArgoCD, Helm 사용",
-      footerLink: [
-        {
-          name: "blog",
-          url: "https://velog.io/@luckyprice1103/Netflix%EC%95%B1-%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4%EB%A1%9C-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0-aws-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%98%EC%97%AC-CICD-%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8-%EA%B5%AC%EC%B6%95"
-        },
-        {
-          name: "github",
-          url: "https://github.com/luckyPrice/Netflix"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
       image: require("./assets/images/mugu.png"),
       // projectName: "Nextu",
-      projectDesc: "MUGU - 집에 필요 없는 물건을 쉽게 팔거나, 단기적인 알바를 구하기 위한 사이트",
+      projectDesc: "MUGU - 집에 필요 없는 물건을 쉽게 팔거나, 단기적인 알바를 구하기 위한 사용자들에게 맞춤 서비스를 제공합니다.",
       footerLink: [
        
         {
@@ -275,18 +262,18 @@ const bigProjects = {
         },
       ]
     },
-    { 
-      image: require("./assets/images/ems.png"),
-      // projectName: "Nextu",
-      projectDesc: "Peoplehub - 직원 혹은 모임에 속해있는 사람들을 관리 할 수 있는 인적자원 관리 시스템. ",
-      footerLink: [
+    // { 
+    //   image: require("./assets/images/ems.png"),
+    //   // projectName: "Nextu",
+    //   projectDesc: "Peoplehub - 직원 혹은 모임에 속해있는 사람들을 관리 할 수 있는 인적자원 관리 시스템. ",
+    //   footerLink: [
        
-        {
-          name: "github",
-          url: "https://github.com/luckyPrice/Peoplehub"
-        }
-      ]
-    },
+    //     {
+    //       name: "github",
+    //       url: "https://github.com/luckyPrice/Peoplehub"
+    //     }
+    //   ]
+    // },
     // {
     //   image: require("./assets/images/twitter.png"),
     //   // projectName: "Nextu",
@@ -408,22 +395,52 @@ const achievementSection = {
 // Blogs Section
 
 const blogSection = {
-  title: "나의 블로그 글",
+  title: "블로그 글",
   subtitle:
-    "저의 블로그를 방문해주세요....!",
+    "프로젝트를 진행하며 발생했던일, 공부한 것들을 기술했습니다.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
+    {
+      url: "https://velog.io/@luckyprice1103/%EC%8B%A4%EC%9A%B4%EC%98%81-Blue-Green-%EB%B0%B0%ED%8F%AC-%ED%9B%84-%EC%95%88%EC%A0%84%ED%95%9C-Docker-%EC%8A%AC%EB%A1%AF-%EC%A0%95%EB%A6%AC-%EC%9E%90%EB%8F%99%ED%99%94-GitHub-Actions-GCP",
+      title: "Docker 슬롯 정리 자동화 (GitHub Actions + GCP + AWS)",
+      description:
+        "현재 Nginx가 바라보는 Docker 컨테이너만 남기고, 나머지는 자동 정리하는 GitHub Actions 워크플로우를 만들었습니다."
+    },
+    {
+      url: "https://velog.io/@luckyprice1103/GCP-MIG-%EA%B8%B0%EB%B0%98-Blue-Green-%EB%B0%B0%ED%8F%AC-%EC%9E%90%EB%8F%99%ED%99%94-%EA%B5%AC%ED%98%84%EA%B8%B0-with-Docker-GitHub-Actions",
+      title: "GCP MIG 기반 Blue-Green 배포 자동화 구현기 (with Docker & GitHub Actions)",
+      description:
+        "클라우드 환경에서서의 Managed Instance Group (MIG) 환경에서 Blue-Green 배포 전략을 적용하고, GitHub Actions로 CI/CD를 자동화한 전체 구현 과정을 정리합니다."
+    },
+    {
+      url: "https://velog.io/@luckyprice1103/AWS-Secrets-Manager-External-Secrets-Operator-Argo-CD%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EC%8B%9C%ED%81%AC%EB%A6%BF-%EB%B0%8F-%ED%99%98%EA%B2%BD-%EB%B3%80%EC%88%98-%EC%A3%BC%EC%9E%85-%EC%83%81%EC%84%B8-%EB%AC%B8%EC%84%9C",
+      title: "AWS Secrets Manager, External Secrets Operator, Argo CD를 활용한 애플리케이션 시크릿 및 환경 변수 주입",
+      description:
+        "AWS Secrets Manager + External Secrets Operator 방식은 Kubernetes와 GitOps의 철학에 완벽하게 부합하며, 런타임 Secret의 보안, 자동화, 동기화 측면에서 훨씬 강력하고 안정적인 솔루션을 제공합니다"
+    },
+    {
+      url: "https://velog.io/@luckyprice1103/%EB%8C%80%EA%B7%9C%EB%AA%A8-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A5%BC-%EC%9C%84%ED%95%9C-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EC%84%A4%EA%B3%84-CDN-MongoDB-Redis",
+      title: "대규모 채팅 서비스를 위한 클라우드 아키텍처 설계- CDN, MongoDB, Redis",
+      description:
+        "대규모 트래픽을 안정적으로 처리하는 것이 목적인 과부하 테스트 대회회에서 실시간 채팅 서비스의 클라우드 인프라 아키텍처를 기술 중심으로 설계했습니다."
+    },
+    {
+      url: "https://velog.io/@luckyprice1103/EKS-%EA%B5%AC%EB%B2%84%EC%A0%84-ExtendedSupport-%EC%9A%94%EA%B8%88%EC%9C%BC%EB%A1%9C-6%EB%B0%B0-%ED%8F%AD%ED%83%84-%EB%A7%9E%EC%9D%80-%ED%9B%84%EA%B8%B0-%ED%8A%B8%EB%9F%AC%EB%B8%94%EC%8A%88%ED%8C%85-%EC%A0%95%EB%A6%AC",
+      title: "[트러블슈팅]EKS 구버전 Extended Support 요금으로 6배 폭탄 맞은 후기",
+      description:
+        "클러스터가 Standard Support(0.10 $/h) → Extended Support(0.60 $/h) 로 넘어가며 6배 청구되었던 문제를 분석해보았습니다."
+    },
     {
       url: "https://velog.io/@luckyprice1103/series/AWS-3-Tier-Architecture-%EA%B5%AC%EC%B6%95",
       title: "3 Tier Architecture 구축",
       description:
-        "AWS 3 Tier Architecture 구축"
+        "AWS 3 Tier Architecture을 직접 구축해보고 분석해보았습니다."
     },
     {
       url: "https://velog.io/@luckyprice1103/series/GitOps-%EA%B8%B0%EB%B0%98-%EB%B0%B0%ED%8F%AC-%EC%9E%90%EB%8F%99%ED%99%94-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8",
       title: "쿠베네티스 프로젝트- GitOps 기반 배포 자동화",
       description:
-        "쿠베네티스 프로젝트-(2) GitOps 기반 배포 자동화"
+        "쿠베네티스 프로젝트 GitOps 기반 배포 자동화를 진행한 과정을 기술합니다."
     },
     {
       url: "https://velog.io/@luckyprice1103/%EB%A9%80%ED%8B%B0%EB%85%B8%EB%93%9C-Kubernetes-%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0-%EA%B5%AC%EC%B6%95",
@@ -444,32 +461,20 @@ const blogSection = {
         "AWS 클라우드를 안전하게 사용하게 만들어주는 서비스들을 알아보자"
     },
     {
-      url: "https://velog.io/@luckyprice1103/series/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%AC%B8%EC%A0%9C",
-      title: "코딩테스트를 풀어보자.",
-      description:
-        "코딩테스트는 언제어디서든 준비가 되어있는 마음으로....."
-    },
-    {
-      url: "https://velog.io/@luckyprice1103/series/python",
-      title: "자료구조, 알고리즘즘",
-      description:
-        "알고있거나 알면 좋을 자료구조와 알고리즘을 알아보자"
-    },
-    {
       url: "https://velog.io/@luckyprice1103/series/Terraform",
       title: "Terraform 이란?",
       description:
-        "깃허브, IBM, slack, atlassian, pinterest, 쿠팡, 삼성, LG... 셀수 없는 기업들이 테라폼을 쓰고 있다."
+        "깃허브, IBM, slack, atlassian, pinterest, 쿠팡, 삼성, LG... 셀수 없는 기업들이 테라폼을 쓰고 있습니다다."
     },
     {
       url: "https://velog.io/@luckyprice1103/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%B3%B4%EC%95%88",
       title: "네트워크 보안.",
       description:
-        "지금은 제로 트러스트 세대, 시스템 엔지니어라면 알고 있어야 할 네트워크 보안 기본 개념."
+        "지금은 제로 트러스트 세대, 시스템 엔지니어라면 알고 있어야 할 네트워크 보안 기본 개념을 공부해보았습니다."
     },
     {
       url: "https://velog.io/@luckyprice1103/series/%EB%84%B7%ED%94%8C%EB%A6%AD%EC%8A%A4-%ED%81%B4%EB%A1%A0-%EB%B0%B0%ED%8F%AC",
-      title: "넷플릭스 앱을 devsecops를 구축하여 배포해보자....!",
+      title: "넷플릭스 앱을 devsecops를 구축하여 배포",
       description:
         "aws, docker, argocd, kubernetes, jenkins, prometheus, grafana, sonarqube, trivy"
     },
@@ -477,19 +482,19 @@ const blogSection = {
       url: "https://velog.io/@luckyprice1103/%EC%A2%8B%EC%9D%80-dockerfile-%EB%A7%8C%EB%93%9C%EB%8A%94-%EB%B0%A9%EB%B2%95",
       title: "좋은 도커 파일을 만드는 방법",
       description:
-        "Dockerfile에는 일반적으로 서버에서 애플리케이션을 실행하는 데 사용하는 단계와 유사한 단계가 있다....!"
+        "Dockerfile에는 일반적으로 서버에서 애플리케이션을 실행하는 데 사용하는 단계와 유사한 단계가 있습니다."
     },
-    {
-      url: "https://velog.io/@luckyprice1103/%EC%9D%B4%EB%AA%A8%EC%8A%A4-%EB%B2%95",
-      title: "이모스 알고리즘이란...?",
-      description:
-        "이모스법이란, 일본의 한 대학원생이 만들어 낸 것으로, 누적 합 알고리즘을 다차원 및 다차수로 확장한 것이다."
-    },
+    // {
+    //   url: "https://velog.io/@luckyprice1103/%EC%9D%B4%EB%AA%A8%EC%8A%A4-%EB%B2%95",
+    //   title: "이모스 알고리즘이란...?",
+    //   description:
+    //     "이모스법이란, 일본의 한 대학원생이 만들어 낸 것으로, 누적 합 알고리즘을 다차원 및 다차수로 확장한 것이다."
+    // },
     {
       url: "https://velog.io/@luckyprice1103/%EB%8F%84%EC%BB%A4Docker-%EA%B0%9D%EC%B2%B4%EB%93%A4%EA%B3%BC-%EC%83%81%ED%98%B8%EC%9E%91%EC%9A%A9-%ED%95%98%EB%8A%94%EB%B2%95",
       title: "도커(Docker) 객체들과 상호작용 하는법",
       description:
-        "Docker를 사용하여 컨테이너, 컨테이너 이미지, 볼륨 및 네트워크와 상호 작용하는 방법을 알아보자."
+        "Docker를 사용하여 컨테이너, 컨테이너 이미지, 볼륨 및 네트워크와 상호 작용하는 방법을 알아봅니다다."
     }
   ],
   display: true // Set false to hide this section, defaults to true
