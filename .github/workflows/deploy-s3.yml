@@ -6,7 +6,7 @@ on:
   # main 브랜치에 푸시될 때 실행
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:
 
 jobs:
