@@ -125,10 +125,6 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "RDS",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
       skillName: "Java",
       fontAwesomeClassname: "fab fa-java"
     },
@@ -139,26 +135,6 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "C++",
       fontAwesomeClassname: "fas fa-keyboard"
-    },
-    {
-      skillName: "golang",
-      fontAwesomeClassname: "fas fa-keyboard"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "Spring",
-      fontAwesomeClassname: "fas fa-leaf"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
     }
   ],
   display: true // Set false to hide this section, defaults to true
