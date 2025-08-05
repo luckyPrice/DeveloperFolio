@@ -24,7 +24,7 @@ const greeting = {
   title: "제 이름은 안상운 입니다.",
   subTitle: emoji(
     // "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
-    "문제 해결을 통해 시스템의 안정성과 효율성을 높이는 인프라 엔지니어입니다. 🚀 클라우드 네이티브 기술을 기반으로 CI/CD 파이프라인을 자동화하고, 장애를 선제적으로 방지하는 탄력적인 아키텍처를 설계하고 운영한 경험이 있습니다. 이 경험을 바탕으로 가장 신뢰도 높은 인프라를 구축하는 전문가로 성장하고 싶습니다."
+    "문제 해결을 통해 시스템의 안정성과 효율성을 높이는 인프라 엔지니어입니다.  🚀🚀 클라우드 네이티브 기술을 기반으로 CI/CD 파이프라인을 자동화하고, 장애를 선제적으로 방지하는 탄력적인 아키텍처를 설계하고 운영한 경험이 있습니다.  🚀🚀 이 경험을 바탕으로 가장 신뢰도 높은 인프라를 구축하는 전문가로 성장하고 싶습니다."
     
   ),
   resumeLink:
@@ -158,6 +158,14 @@ const educationInfo = {
       duration: "September 2013 - April 2017",
       desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
       descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+    },
+    {
+      schoolName: "카카오테크 부트캠프 - 클라우드 네이티브 과정",
+      logo: require("./assets/images/kakao.png"),
+      subHeader: "Bachelor of Science in Computer Science",
+      duration: "September 2013 - April 2017",
+      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
+      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
@@ -231,6 +239,10 @@ const bigProjects = {
       // projectName: "Saayahealth",
       projectDesc: "On The Top(OTT) - 본 서비스는 사용자의 데스크 환경을 분석하고, 어울리는 제품을 추천 및 구매할 수 있는 AI 기반 데스크테리어 플랫폼입니다. 사용자의 참여와 상호작용을 통해 개인화된 경험을 제공합니다.",
       footerLink: [
+        {
+          name: "github",
+          url: "https://github.com/100-hours-a-week/16-Hot6-wiki/wiki/Cloud-Wiki"
+        },
         {
           name: "github",
           url: "https://github.com/100-hours-a-week/16-Hot6-wiki/wiki"
