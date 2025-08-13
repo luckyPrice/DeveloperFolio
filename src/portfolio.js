@@ -236,8 +236,16 @@ const bigProjects = {
   projects: [
     {
       image: require("./assets/images/onthetop.png"),
-      // projectName: "Saayahealth",
       projectDesc: "On The Top(OTT) - 본 서비스는 사용자의 데스크 환경을 분석하고, 어울리는 제품을 추천 및 구매할 수 있는 AI 기반 데스크테리어 플랫폼입니다. 사용자의 참여와 상호작용을 통해 개인화된 경험을 제공합니다.",
+
+       // 👇 (1/2) 상세 페이지로 이동하기 위한 고유 url.
+      url: "on-the-top", 
+      
+      // 👇 (2/2) 상세 페이지에 표시될 긴 설명을 추가합니다.
+      longDescription:
+        "On The Top(OTT)은 사용자의 데스크 환경을 AI로 분석하여 가장 어울리는 데스크테리어 제품을 추천하고 구매까지 연결하는 서비스입니다. AWS의 다양한 서비스를 활용하여 인프라를 구축했습니다. 예를 들어, Amazon S3에 제품 이미지를 저장하고, Amazon Rekognition으로 이미지 내 객체를 분석하여 사용자 취향에 맞는 제품을 태그 기반으로 추천합니다. 사용자가 데스크 사진을 업로드하면, 이 분석 결과를 바탕으로 개인화된 추천 목록을 제공하여 높은 만족도를 이끌어냈습니다. 이 프로젝트를 통해 대용량 이미지 처리와 AI 서비스를 연동하는 아키텍처 설계 경험을 쌓을 수 있었습니다.",
+
+
       footerLink: [
         {
           name: "github",
@@ -254,6 +262,13 @@ const bigProjects = {
       image: require("./assets/images/til.png"),
       // projectName: "Saayahealth",
       projectDesc: "TILING - LLM 기반 작성한 TIL을 Markdown(md) 형식으로 변환하여 연동된 플랫폼(GitHub, Notion)에 자동 업로드할 수 있는 기능을 제공합니다.",
+
+       url: "tiling-project", 
+      
+      // 👇 (2/2) 상세 페이지 긴 설명 추가
+      longDescription:
+        "TILING은 개발자들의 '오늘 배운 것(Today I Learned)' 작성 생산성을 극대화하기 위한 LLM 기반 자동화 툴입니다. 사용자가 간단한 메모나 키워드 중심으로 내용을 입력하면, LLM API(예: OpenAI GPT)를 호출하여 자연스러운 문장의 Markdown 형식으로 변환해 줍니다. 또한, GitHub API, Notion API와 연동하여 버튼 클릭 한 번으로 사용자가 지정한 레포지토리나 페이지에 TIL을 자동으로 업로드합니다. 이 과정에서 CI/CD 파이프라인을 구축하여 코드 변경 시 자동으로 테스트 및 배포가 이루어지도록 설계했으며, 보안을 위해 API 키와 같은 민감 정보는 AWS Secrets Manager를 통해 안전하게 관리했습니다.",
+
       footerLink: [
         {
           name: "github",
@@ -266,6 +281,13 @@ const bigProjects = {
       image: require("./assets/images/mugu.png"),
       // projectName: "Nextu",
       projectDesc: "MUGU - 집에 필요 없는 물건을 쉽게 팔거나, 단기적인 알바를 구하기 위한 사용자들에게 맞춤 서비스를 제공합니다.",
+
+      url: "mugu-market",
+      
+      // 👇 (2/2) 상세 페이지 긴 설명 추가
+      longDescription: 
+        "MUGU는 지역 기반의 중고 거래와 단기 구인/구직을 연결하는 하이퍼로컬 플랫폼입니다. 사용자의 위치를 기반으로 주변의 거래 가능한 물품이나 아르바이트 정보를 실시간으로 보여줍니다. Docker와 Kubernetes(EKS)를 사용하여 마이크로서비스 아키텍처(MSA)로 인프라를 구축하였으며, 트래픽 급증에 대비하여 Auto Scaling을 설정해 안정적인 서비스 운영이 가능하도록 했습니다. Prometheus와 Grafana를 이용해 각 서비스의 상태를 실시간으로 모니터링하고, 장애 발생 시 슬랙으로 알림을 받아 신속하게 대응할 수 있는 시스템을 마련했습니다.",
+        
       footerLink: [
        
         {
@@ -339,7 +361,7 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "AWS Certified Solutions Architect",
+      title: "AWS Certified Solutions Architect - Associate",
       subtitle:
         "AWS 기술의 기반으로 안전하고 강력한 애플리케이션을 설계 및 배포하는 방법에 대한 지식을 효과적으로 입증하고, 고객 요구 사항을 기반으로 아키텍처 설계 원칙을 사용하여 솔루션을 정의, 또한 모범 사례를 기반으로 프로젝트 수명 주기 전반에 걸쳐 조직에 구현 지침을 제공할 수 있다는 능력 검증을 할 수 있습니다.",
       image: require("./assets/images/saa-image.png"),

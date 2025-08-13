@@ -1,0 +1,30 @@
+@import "../../_globalColor";
+
+.project-detail-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 40px 20px;
+  text-align: center;
+
+  .project-detail-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .project-detail-long-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: left;
+    white-space: pre-wrap; // \n과 같은 줄바꿈 문자를 인식하게 함
+    margin-bottom: 40px;
+  }
+
+  .project-detail-links {
+    margin-bottom: 40px;
+
+    // 버튼들 사이의 간격
+    & > *:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}

@@ -3,10 +3,12 @@ import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import {Link} from "react-router-dom"; 
 
 export default function StartupProject() {
   function openUrlInNewTab(url) {
     if (!url) {
+      
       return;
     }
     var win = window.open(url, "_blank");
@@ -35,13 +37,15 @@ export default function StartupProject() {
           <div className="projects-container">
             {bigProjects.projects.map((project, i) => {
               return (
-                <div
-                  key={i}
+                <Link
+                  to={`/projects/${project.url}`} // portfolio.js에 추가한 url을 사용합니다.
                   className={
                     isDark
                       ? "dark-mode project-card project-card-dark"
                       : "project-card project-card-light"
                   }
+                  key={i}
+                  style={{ textDecoration: "none" }} // 링크의 기본 밑줄을 제거합니다.
                 >
                   {project.image ? (
                     <div className="project-image">
@@ -67,6 +71,9 @@ export default function StartupProject() {
                     </p>
                     {project.footerLink ? (
                       <div className="project-card-footer">
+                        <span className={isDark ? "dark-mode project-tag" : "project-tag"}>
+                         자세히 보기
+                        </span>
                         {project.footerLink.map((link, i) => {
                           return (
                             <span
@@ -83,7 +90,7 @@ export default function StartupProject() {
                       </div>
                     ) : null}
                   </div>
-                </div>
+                </Link>
               );
             })}
           </div>
