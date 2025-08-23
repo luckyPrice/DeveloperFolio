@@ -389,10 +389,6 @@ const bigProjects = {
             value: "쿠버네티스 스팟 인스턴스를 활용한 비용 최적화"
         },
         {
-          type: 'image',
-          value: require("./assets/images/onthetop-spot.jpg") // 대표 이미지
-        },
-        {
             type: "heading",
             value: "EKS Spot 인스턴스를 활용한 비용 최적화 전략"
         },
