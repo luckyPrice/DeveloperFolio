@@ -1,0 +1,69 @@
+// ProjectDetail.scss 수정 후
+
+@import "../../_globalColor";
+
+.project-detail-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 40px 20px;
+  // text-align: center; // 전체 중앙 정렬 제거
+
+  /* 👑 요구사항 2: 제목/부제목 글자 크기 */
+  .project-detail-title {
+    font-size: 3.2rem; /* 제목: 아주 크게 */
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .project-detail-subtitle {
+    font-size: 1.2rem; /* 페이지 부제목 */
+    text-align: center;
+    margin-bottom: 4rem; // 콘텐츠와 간격 확보
+  }
+
+  /* 👑 요구사항 3: 자유로운 배치를 위한 콘텐츠 래퍼 */
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; // 각 콘텐츠(이미지, 글) 사이의 간격
+    margin-bottom: 3rem; // 하단 버튼과 간격 확보
+
+    /* 👑 요구사항 1: 이미지 사이즈 조절 */
+    .content-image {
+      max-width: 100%; // 이미지가 부모 요소를 넘어가지 않도록 함
+      height: auto;    // 이미지 비율 유지
+      border-radius: 12px; // 디자인 포인트
+    }
+
+    /* 👑 요구사항 2: 소제목, 본문 글자 크기 */
+    .content-subtitle {
+      font-size: 2rem; // 소제목: 약간 크게
+      font-weight: 600;
+      margin-top: 1rem; // 문단이 바뀔 때 위쪽 여백 추가
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #eee; // 소제목 구분선
+    }
+
+    .content-heading {
+        font-size: 1.7rem; // subtitle보다 약간 작게
+        font-weight: 600;
+        margin-top: 1rem; // 위쪽 여백
+    }
+
+    .content-text {
+      font-size: 1.1rem; // 본문 텍스트
+      line-height: 1.8;  // 줄 간격을 넓혀 가독성 향상
+      white-space: pre-wrap;
+      text-align: left; // 본문은 왼쪽 정렬
+    }
+  }
+
+  .project-detail-links {
+    margin-bottom: 40px;
+    text-align: center; // 링크 버튼들은 중앙 정렬
+
+    & > *:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}
