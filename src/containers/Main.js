@@ -7,6 +7,7 @@ import StackProgress from "./skillProgress/skillProgress";
 import WorkExperience from "./workExperience/WorkExperience";
 import Projects from "./projects/Projects";
 import ProjectDetail from "../containers/projectDetail/ProjectDetail";
+import ScrollToTop from "../components/scroll/ScrollToTop";
 import StartupProject from "./StartupProjects/StartupProject";
 import Achievement from "./achievement/Achievement";
 import Blogs from "./blogs/Blogs";
@@ -53,6 +54,7 @@ const Main = () => {
         ) : (
           // 👇 (3/4) BrowserRouter로 전체를 감싸서 라우팅 기능을 활성화.
           <BrowserRouter>
+           <ScrollToTop />
             <Header />
             {/* 👇 (4/4) URL 경로에 따라 다른 화면을 보여주도록 Switch와 Route를 사용합니다. */}
             <Switch>
@@ -79,7 +81,7 @@ const Main = () => {
               </Route>
             </Switch>
             {/* Footer와 ScrollToTopButton은 모든 페이지에 공통으로 보이게 Switch 밖에 둡니다. */}
-            {/* <Footer /> */}
+            <Footer />
             <ScrollToTopButton />
           </BrowserRouter>
         )}

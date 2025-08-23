@@ -2,8 +2,6 @@ import React, {useContext} from "react"; // useContext를 import 합니다.
 import {useParams, useHistory} from "react-router-dom";
 import {bigProjects} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext"; // StyleContext를 import 합니다.
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
 import Button from "../../components/button/Button";
 import "./ProjectDetail.scss";
 
@@ -30,24 +28,53 @@ export default function ProjectDetail(props) { // props는 이제 Header/Footer�
   };
 
   return (
-    <div className="project-detail-main" style={{backgroundColor: theme.body}}>
-      {/* Header와 Footer에는 props로 전달해야 할 수도 있습니다. */}
-      <Header theme={theme} setTheme={changeTheme} />
       <div className="project-detail-container">
-        <h1 className="project-detail-title" style={{color: theme.text}}>
-          {project.projectDesc.split("-")[0]}
-        </h1>
         
-        <div className="project-image-container">
-          <img src={project.image} alt={project.projectDesc.split("-")[0]} className="project-detail-image" />
-        </div>
 
-        <p
-          className="project-detail-long-description"
-          style={{color: theme.secondaryText}}
-        >
-          {project.longDescription}
+        {/* 1. 페이지의 메인 제목과 부제목 */}
+        <h1 className="project-detail-title" style={{color: theme.text}}>
+          {project.title}
+        </h1>
+        <p className="project-detail-subtitle" style={{color: theme.secondaryText}}>
+          {project.subtitle}
         </p>
+
+        {/* 2. 자유롭게 배치되는 동적 콘텐츠 영역 */}
+        <div className="content-wrapper">
+          {project.content.map((item, index) => {
+            switch (item.type) {
+              case 'image':
+                return (
+                  <img
+                    key={index}
+                    src={item.value}
+                    alt={`${project.title} content ${index}`}
+                    className="content-image" // 이미지 스타일을 위한 클래스
+                  />
+                );
+              case 'subtitle':
+                return (
+                  <h2 key={index} className="content-subtitle" style={{color: theme.text}}>
+                    {item.value}
+                  </h2>
+                );
+              case 'heading': 
+              return (
+                <h3 key={index} className="content-heading" style={{color: theme.text}}>
+                    {item.value}
+                </h3>
+              );
+              case 'text':
+                return (
+                  <p key={index} className="content-text" style={{color: theme.secondaryText}}>
+                    {item.value}
+                  </p>
+                );
+              default:
+                return null;
+            }
+          })}
+        </div>
 
         <div className="project-detail-links">
            {/* portfolio.js의 footerLink 배열을 사용하여 버튼을 렌더링합니다. */}
@@ -68,7 +95,5 @@ export default function ProjectDetail(props) { // props는 이제 Header/Footer�
           theme={theme}
         />
       </div>
-      <Footer theme={theme} />
-    </div>
   );
 }
