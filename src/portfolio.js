@@ -325,13 +325,13 @@ const bigProjects = {
           type: 'subtitle',
           value: "시연영상"
         },
-        {
-          type: 'image',
-          value: require("./assets/images/video/ott.gif") // 대표 이미지
-        },
+        // {
+        //   type: 'image',
+        //   value: require("./assets/images/video/ott.gif") // 대표 이미지
+        // },
         {
           type: 'text',
-          value: "https://drive.google.com/file/d/1BzidEkesLumfyolAEDONOpuWSnwswJ7O/view"
+          value: "https://drive.google.com/file/d/186viJnU2IkCxyXc-WTodSZGMiYTjjD0t/view?usp=sharing"
         },
         {
             type: "subtitle",
