@@ -62,11 +62,13 @@ const Main = () => {
               <Route path="/" exact>
                 <Greeting />
                 <Skills />
+                <StartupProject />
+                <Blogs />
                 <StackProgress />
                 {/* <Education /> */}
                 {/* <WorkExperience /> */}
-                <StartupProject />
-                <Blogs />
+                
+                
                 <Projects />
                 <Achievement />
                 {/* <Talks /> */}
