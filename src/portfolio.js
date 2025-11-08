@@ -28,7 +28,7 @@ const greeting = {
     
   ),
   resumeLink:
-    "resume.pdf", // Set to empty to hide the butto
+    "https://docs.google.com/document/d/1LqXi1dRgNX_PMhWkrJSRW5ycnlnW0jYPxnTqTKKk_oE/edit?usp=sharing", // Set to empty to hide the butto
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -232,7 +232,7 @@ const openSource = {
 
 const bigProjects = {
   title: "주요 프로젝트",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "Some projects that I contributed as a Cloud/Infrastructure Engineer",
   projects: [
     {
       title: "On The Top(OTT)",
