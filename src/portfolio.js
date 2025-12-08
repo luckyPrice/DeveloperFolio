@@ -21,14 +21,14 @@ const illustration = {
 
 const greeting = {
   username: "AN SANGWOON",
-  title: "제 이름은 안상운 입니다.",
+  title: "안상운(1999)",
   subTitle: emoji(
     // "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
-    "문제 해결을 통해 시스템의 안정성과 효율성을 높이는 인프라 엔지니어입니다.  🚀🚀 클라우드 네이티브 기술을 기반으로 CI/CD 파이프라인을 자동화하고, 장애를 선제적으로 방지하는 탄력적인 아키텍처를 설계하고 운영한 경험이 있습니다.  🚀🚀 이 경험을 바탕으로 가장 신뢰도 높은 인프라를 구축하는 전문가로 성장하고 싶습니다."
+    "문제 해결을 통해 시스템의 안정성과 효율성을 높이는 데브옵스 엔지니어입니다.  🚀🚀 클라우드 네이티브 기술을 기반으로 CI/CD 파이프라인을 자동화하고, 장애를 선제적으로 방지하는 탄력적인 아키텍처를 설계하고 운영한 경험이 있습니다.  🚀🚀 이 경험을 바탕으로 가장 신뢰도 높은 인프라를 구축하는 전문가로 성장하고 싶습니다."
     
   ),
   resumeLink:
-    "https://docs.google.com/document/d/1LqXi1dRgNX_PMhWkrJSRW5ycnlnW0jYPxnTqTKKk_oE/edit?usp=sharing", // Set to empty to hide the butto
+    "https://docs.google.com/document/d/1Qu0TexkxI8hQrmMyE1FH9HyRkoyxDSHlr4bTCaWghXs/edit?usp=sharing", // Set to empty to hide the butto
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
